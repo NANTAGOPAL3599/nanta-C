@@ -1,20 +1,14 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
 int main()
 {
-int n;
-scanf("%d",&n);
-if(n>0)
-{
-printf("The no is positive");
-}
-else if(n<0)
-{
-printf("The no is negative");
-}
-else
-{
-printf("The no is equal to 0");
-}
-return 0;
+  int c;
+  printf("Enter a number ");
+  scanf("%d", &c);
+  if(c>1)
+     printf("positive");
+  else if(c==0)
+     printf("zero");
+  else
+     printf("negative");
+  return 0;
 }
