@@ -1,18 +1,12 @@
-#include <stdio.h>
- 
-int main()
-{
-  int Number, Reminder, Count=0;
- 
-  printf("\n Enter any number\n");
-  scanf("%d", &Number);
- 
-  while(Number > 0)
-  {
-     Number = Number / 10;
-     Count = Count + 1;  
-  }
- 
-  printf("\n Number of Digits in a Given Number = %d", Count);
-  return 0;
+#include<stdio.h>
+int main(){
+	int num,count = 0;
+	printf("Enter the integer :");
+	scanf("%d",&num);
+	while(num != 0){
+		num = num / 10;
+		count++;
+	}
+	printf("%d",count);
+	return 0;
 }
